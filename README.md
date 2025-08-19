@@ -3,13 +3,14 @@
 __*a barebone hash table implimentation*__
 
 `#include <hashtable.c>`  <br>
-into the .c file. using <> because `make install` did its job
+into the .c file. using `<>` because `make install` did its job
 
-`gcc -o <file> <file>.c -lht`
+`gcc -o <file> <file>.c -lht` <br>
+to compile
 
 ### installation troubleshooting
 
-after error free compilation, if there a `error while loading shared libraries: libht.so: cannot open shared object file: No such file or directory`
+after error free compilation, if there is an `error while loading shared libraries: libht.so: cannot open shared object file: No such file or directory`
 
 usually means ldconfig isnt setup to look at `/usr/local/lib` yet... how to fix that?
 
