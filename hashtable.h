@@ -8,10 +8,11 @@ typedef struct item {
 } item;
 
 typedef struct {
+    int size;
     item **items;
 } hashtable;
 
-hashtable *create_ht();
+hashtable *create_ht(const int size);
 hashtable *delete_ht(hashtable *ht);
 
 void insert_ht(hashtable *ht, const char *key, const char *value);
