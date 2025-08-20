@@ -18,6 +18,6 @@ hashtable *delete_ht(hashtable *ht);
 void insert_ht(hashtable *ht, const char *key, const char *value);
 char *search_ht(hashtable *ht, const char *key);
 void dump_ht(hashtable *ht);
-void remove_ht(hashtable *ht, const char *key);
+void rmfrom_ht(hashtable *ht, const char *key);
 
 #endif

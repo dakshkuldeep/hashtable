@@ -1,7 +1,8 @@
-#include "hashtable.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+
+#include "llht.h"
 
 #define LARGE_PRIME 173
 
@@ -90,7 +91,7 @@ static void delete_item(item *i) {
 	free(i);
 }
 
-void remove_ht(hashtable *ht, const char *key) {
+void rmfrom_ht(hashtable *ht, const char *key) {
 	if(key == NULL) return;
 	
     const int index = hash(key, ht->size);

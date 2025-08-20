@@ -1,10 +1,10 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -fPIC
-NAME = hashtable
+NAME = llht
 SRC = $(NAME).c
 HDR = $(NAME).h
 OBJ = build/$(NAME).o
-SHARED = build/libht.so
+SHARED = build/libllht.so
 
 .PONY: all clean install builddir
 
