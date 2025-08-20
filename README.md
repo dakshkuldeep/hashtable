@@ -2,12 +2,6 @@
 
 __*a barebone hash table implimentation*__
 
-`#include <hashtable.c>`  <br>
-into the .c file. using `<>` because `make install` did its job
-
-`gcc -o <file> <file>.c -lht` <br>
-to compile
-
 ### installation troubleshooting
 
 after error free compilation, if there is an `error while loading shared libraries: libht.so: cannot open shared object file: No such file or directory`
