@@ -7,6 +7,7 @@ typedef struct {
 } item;
 
 typedef struct {
+    int base_size;
     int size;
     int count;
     item **items;
